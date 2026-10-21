@@ -1,0 +1,32 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8787,
+    "sync_interval_minutes": 10
+  },
+  "accounts": [
+    {
+      "id": "claude-pro",
+      "name": "Claude Pro",
+      "provider": "anthropic",
+      "kind": "subscription",
+      "monthly_fee": 20,
+      "since": null,
+      "sources": [
+        { "type": "claude_code" }
+      ]
+    },
+    {
+      "id": "codex",
+      "name": "Codex CLI",
+      "provider": "openai",
+      "kind": "subscription",
+      "monthly_fee": 0,
+      "since": null,
+      "sources": [
+        { "type": "codex" }
+      ]
+    }
+  ],
+  "price_overrides": {}
+}
